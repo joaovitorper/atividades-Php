@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo Com PHP</title>
+    <title> "ex001.php".</title>
 </head>
 <body>
     <h1>Dia e noite</h1>
@@ -18,6 +18,14 @@
     echo "<img src='img/sol.png'>";
     }
     echo "Hoje é dia ". $hoje." e agora são".$agora. "horas.";
+
+     // Exibir mensagem conforme a faixa de horário da tabela
+     if ($hora>= 6 && $hora<12){
+        echo "<h2>Bom dia!</h2>";
+    } elseif ($hora >= 12 && $hora < 18) {
+      echo "<h2>Boa tarde!</h2>";
+    }
+  
     ?>
 </body>
 </html>
