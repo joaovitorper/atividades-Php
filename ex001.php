@@ -19,12 +19,15 @@
     }
     echo "Hoje é dia ". $hoje." e agora são".$agora. "horas.";
 
-     // Exibir mensagem conforme a faixa de horário da tabela
-     if ($hora>= 6 && $hora<12){
-        echo "<h2>Bom dia!</h2>";
-    } elseif ($hora >= 12 && $hora < 18) {
-      echo "<h2>Boa tarde!</h2>";
-    }
+// Exibir mensagem conforme a faixa de horário da tabela
+if ($hora >= 6 && $hora < 12) {
+    echo "<h2>Bom dia!</h2>";
+} elseif ($hora >= 12 && $hora < 18) {
+    echo "<h2>Boa tarde!</h2>";
+} else {
+    echo "<h2>Boa noite!</h2>";
+}
+
   
     ?>
 </body>
